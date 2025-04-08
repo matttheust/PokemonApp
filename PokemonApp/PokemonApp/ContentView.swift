@@ -10,13 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 10) {
-                    Text("Poppins Regular")
-                        .font(.custom("Poppins-Regular", size: 20))
-                    Text("Poppins Bold")
-                        .font(.custom("Poppins-Bold", size: 20))
-                    Text("Poppins Italic")
-                        .font(.custom("Poppins-Italic", size: 20))
-                }
+            Text("Pokémon GO")
+                .poppins(.bold, size: 24)
+            
+            Text("Catch them all")
+                .poppins(.regular, size: 16, color: .red)
+            
+        }
     }
 }
 
