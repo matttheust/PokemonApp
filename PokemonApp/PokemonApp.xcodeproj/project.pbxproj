@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FCBC92D62DA5C21E004A9689 /* Exceptions for "PokemonApp" folder in "PokemonApp" target */ = {
+		FCBC92E72DA5C94D004A9689 /* Exceptions for "PokemonApp" folder in "PokemonApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +24,7 @@
 		FCBC929B2DA5BD09004A9689 /* PokemonApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				FCBC92D62DA5C21E004A9689 /* Exceptions for "PokemonApp" folder in "PokemonApp" target */,
+				FCBC92E72DA5C94D004A9689 /* Exceptions for "PokemonApp" folder in "PokemonApp" target */,
 			);
 			path = PokemonApp;
 			sourceTree = "<group>";
