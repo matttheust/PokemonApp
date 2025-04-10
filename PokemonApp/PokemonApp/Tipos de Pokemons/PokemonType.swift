@@ -78,7 +78,7 @@ enum PokemonType: String, CaseIterable, Identifiable {
         }
     }
     
-    var iconName: String {
-        "icon_\(self.rawValue)"
-    }
+    var icon: Image {
+            Image(self.rawValue)
+        }
 }
