@@ -32,14 +32,22 @@ class PokemonService {
             completion(nil)
             return
         }
-        
-        URLSession.shared.dataTask(with: url) { data, _, _ in
-            guard let data = data,
-                  let details = try? JSONDecoder().decode(PokemonDetails.self, from: data) else {
+
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data, error == nil else {
                 completion(nil)
                 return
             }
-            completion(details)
+
+            do {
+                let decoder = JSONDecoder()
+                let details = try decoder.decode(PokemonDetails.self, from: data)
+                completion(details)
+            } catch {
+                print("Erro ao decodificar JSON: \(error)")
+                completion(nil)
+            }
         }.resume()
     }
+
 }
